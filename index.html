@@ -62,11 +62,11 @@
             } else if (x.length >= 6 && x.length < 8 && numberIn) {
                 y.textContent = "Medium";
                 y.style.color = "blue";
-            } else if (x.length < 6) {
+            } else if (x.length <= 6) {
                 y.textContent = "weak";
                 y.style.color = "red";
             } else if (x.length >= 6 && !numberIn) {
-                y.textContent = "";
+                y.textContent = "weak";
             }
         }
 
